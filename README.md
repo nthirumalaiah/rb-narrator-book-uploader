@@ -37,35 +37,6 @@ This application follows **Clean Architecture** and **SOLID principles** to ensu
 ├── main.py                      # Application entry point
 └── requirements.txt             # Python dependencies
 ```
-
-## 🎯 SOLID Principles Implementation
-
-### 1. **Single Responsibility Principle (SRP)**
-- **Routes**: Handle only HTTP concerns
-- **Services**: Contain only business logic
-- **Repositories**: Handle only data access
-- **Models**: Represent only data structures
-
-### 2. **Open/Closed Principle (OCP)**
-- **Configuration**: New settings can be added without modifying existing code
-- **Exception Handlers**: New handlers can be registered without changing existing ones
-- **Routes**: New endpoints can be added via new router modules
-
-### 3. **Liskov Substitution Principle (LSP)**
-- **Interfaces**: All implementations can be substituted without breaking functionality
-- **Repository Pattern**: Any repository implementation can replace another
-
-### 4. **Interface Segregation Principle (ISP)**
-- **Service Interfaces**: Small, focused interfaces for specific operations
-- **Repository Interfaces**: Separated concerns for different data operations
-
-### 5. **Dependency Inversion Principle (DIP)**
-- **Services depend on Repository interfaces**, not concrete implementations
-- **Routes depend on Service interfaces**, not concrete implementations
-- **Dependency Injection**: All dependencies are injected, not created
-
-## 🔧 Key Design Patterns
-
 ### Repository Pattern
 ```python
 # Abstract interface
